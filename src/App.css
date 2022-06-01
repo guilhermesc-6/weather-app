@@ -9,8 +9,39 @@
   min-height: 100vh;
   max-width: 1460px;
   margin: auto;
-  background: url("./images/ballon.jpg") no-repeat;
-  background-image: cover;
+  background: url("./images/ballon.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.search {
+  position: absolute;
+  top: 20px;
+  display: flex;
+}
+#search {
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  height: 30px;
+  font-size: 0.5rem;
+  border-radius: 10px;
+}
+.btn {
+  background-color: #f3f3f37d;
+  margin-left: 10px;
+  height: 32px;
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 2px;
+}
+.btn:hover {
+  background: #f3f3f3;
+}
+.btn img {
+  width: 30px;
 }
 
 .glass {
