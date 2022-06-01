@@ -24,7 +24,7 @@ function App() {
 
   const searchByCity = (city) => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ce258b1ba4d1ab38ebdbd2ca8964ff13&lang=pt_br&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ce258b1ba4d1ab38ebdbd2ca8964ff13&units=metric`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -36,9 +36,9 @@ function App() {
           condition: data.weather[0].description,
           icon: data.weather[0].icon,
         });
+        setBackground();
       })
       .catch((error) => alert("Invalid City"));
-    setBackground();
   };
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function App() {
         let lat = position.coords.latitude;
 
         let apikey = "ce258b1ba4d1ab38ebdbd2ca8964ff13";
-        let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&lang=pt_br&units=metric`;
+        let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=metric`;
 
         fetch(api)
           .then((response) => {

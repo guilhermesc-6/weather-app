@@ -24,3 +24,4 @@ A simple weather app displaying only the most important information.
 ## screenshot
 
 ![screenshot](/src/images/weather-app-screenshot.png)
+![screenshot](/src/images/weather-app-screenshot-en.png)
